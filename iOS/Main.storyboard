@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6750" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6735"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3">
+                                <rect key="frame" x="85" y="260" width="150" height="2"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="40" y="289" width="240" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="17"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="17" firstItem="3" firstAttribute="height" constant="2">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="17"/>
+                                    </mask>
+                                </variation>
+                                <color key="progressTintColor" colorSpace="calibratedRGB" red="1" green="0" blue="0" alpha="1"/>
+                            </progressView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="31">
+                                <rect key="frame" x="85" y="236" width="150" height="2"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="40" y="229" width="240" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="34"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="34" firstItem="31" firstAttribute="height" constant="2">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="34"/>
+                                    </mask>
+                                </variation>
+                            </progressView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="36">
+                                <rect key="frame" x="85" y="371" width="150" height="2"/>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <rect key="frame" x="40" y="349" width="240" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="39"/>
+                                    </mask>
+                                </variation>
+                                <constraints>
+                                    <constraint id="39" firstItem="36" firstAttribute="height" constant="2">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                                    </constraint>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="39"/>
+                                    </mask>
+                                </variation>
+                                <color key="progressTintColor" colorSpace="calibratedRGB" red="0" green="1" blue="0" alpha="1"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="3"/>
+                                <exclude reference="31"/>
+                                <exclude reference="36"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="4"/>
+                                <exclude reference="7"/>
+                                <exclude reference="19"/>
+                                <exclude reference="32"/>
+                                <exclude reference="33"/>
+                                <exclude reference="35"/>
+                                <exclude reference="37"/>
+                                <exclude reference="38"/>
+                                <exclude reference="40"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="3"/>
+                                <include reference="31"/>
+                                <include reference="36"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="4"/>
+                                <include reference="7"/>
+                                <include reference="19"/>
+                                <include reference="32"/>
+                                <include reference="33"/>
+                                <include reference="35"/>
+                                <include reference="37"/>
+                                <include reference="38"/>
+                                <include reference="40"/>
+                            </mask>
+                        </variation>
+                        <constraints>
+                            <constraint id="4" firstItem="3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="85">
+                                <variation key="heightClass=regular-widthClass=compact" constant="40"/>
+                            </constraint>
+                            <constraint id="7" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" constant="85">
+                                <variation key="heightClass=regular-widthClass=compact" constant="40"/>
+                            </constraint>
+                            <constraint id="19" firstItem="3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="20"/>
+                            <constraint id="32" firstItem="31" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="85">
+                                <variation key="heightClass=regular-widthClass=compact" constant="40"/>
+                            </constraint>
+                            <constraint id="33" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="31" secondAttribute="trailing" constant="85">
+                                <variation key="heightClass=regular-widthClass=compact" constant="40"/>
+                            </constraint>
+                            <constraint id="35" firstItem="3" firstAttribute="top" secondItem="31" secondAttribute="bottom" constant="51">
+                                <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                            </constraint>
+                            <constraint id="37" firstItem="36" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="85">
+                                <variation key="heightClass=regular-widthClass=compact" constant="40"/>
+                            </constraint>
+                            <constraint id="38" firstItem="8bC-Xf-vdC" firstAttribute="trailing" secondItem="36" secondAttribute="trailing" constant="85">
+                                <variation key="heightClass=regular-widthClass=compact" constant="40"/>
+                            </constraint>
+                            <constraint id="40" firstItem="36" firstAttribute="top" secondItem="3" secondAttribute="bottom" constant="52">
+                                <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                            </constraint>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progressY" destination="3" id="name-outlet-3"/>
+                        <outlet property="progressX" destination="31" id="name-outlet-31"/>
+                        <outlet property="progressZ" destination="36" id="name-outlet-36"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
